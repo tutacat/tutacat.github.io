@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      span.span{
+        font-family:"Noto Color Emoji";
+        font-size:50vw;
+      }
+    </style>
+    <script>
+      setTimeout(function(){
+        var span = document.getElementById("span");
+        span.innerText=String.fromCharCode(Math.floor(Math.random()*3094)+0x231a)
+      }, 1000)
+    </script>
     <title>tutacat.github.io</title>
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
     <div style="text-align:center;top:22vh;position:absolute;">
-      <a href="/looper/">
-        <h1>-> eee <-</h1>
-      </a>
+      <hr>
+      <ul>
+        <li>
+          <a href="/looper/">
+            <h2>-> eee <-</h2>
+          </a>
+        </li>
+        <li>
+          <h2>radnpom emjoji:</h2>
+          <span id="span"></span>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
