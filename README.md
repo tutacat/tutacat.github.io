@@ -4,5 +4,5 @@
 
 in this project,
 
-Any copyright is dedicated to the Public Domain.
+Any copyright is dedicated to the Public Domain.<br>
 https://creativecommons.org/publicdomain/zero/1.0/
