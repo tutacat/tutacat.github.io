@@ -4,10 +4,12 @@ setTimeout(() => {
       elem.onclick = (e) => {
           setTimeout(() => {
               navigator.clipboard.writeText(e.target.innerText);
+              e.target.style.fontSize = "initial";
               e.target.value = e.target.innerText = String.fromCharCode(
                   Math.floor(Math.random()*3094)+0x231a
                 );
           },100);
+          e.target.style.fontSize = "1.5em";
           e.target.innerText = "*boop*";
         }
     }
