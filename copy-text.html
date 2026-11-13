@@ -13,13 +13,18 @@
   </div>
   <em>To use this page, just put the text you want to display/copy as the "hash" part of the url, i.e. /#my%20text</em>
   <script>
-    text = location.hash.substr(1);
-    link.textContent = ""+text;
-    copyText() {
-      navigator.clipboard.writeText(text)
-    };
-    btn.onclick = link.onclick = copyText;
-    btn.select();
+    function copyText() {
+        navigator.clipboard.writeText(text)
+      };
+    
+    function update() {
+      text = location.hash.substr(1);
+      link.textContent = ""+text;
+      link.select();
+    }
+    
+    btn.onclick = link.onclick = () => { update(); copyText(); }
+    update();
   </script>
 </body>
 </html>
