@@ -20,7 +20,6 @@
     function update() {
       text = location.hash.substr(1);
       link.textContent = ""+text;
-      link.select();
     }
     
     btn.onclick = link.onclick = () => { update(); copyText(); }
